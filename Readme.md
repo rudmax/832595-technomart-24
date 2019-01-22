@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [максим руднев](https://up.htmlacademy.ru/htmlcss/24/user/832595).
-* Наставник: `Неизвестно`.
+* Наставник: [Анатолий Долгов](https://htmlacademy.ru/profile/dolgov_anatoly).
 
 ---
 
