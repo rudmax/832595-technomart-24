@@ -6,32 +6,32 @@
   </head>
   <body>
 <header class="main-header">
-    <section class="title">
+    <nav class="head-navigation">
         <a href="index.html">
             <img src="img/logoTechnomart.png" alt="Логотип техномарта">
         </a>
         <form>search</form>
-        <ul>
+        <ul class="order-manu">
             <li class="bookmarks">Закладки:0</li>
             <li class="basket">Корзина:0</li>
             <li class="order"><a href="order.html">Оформить заказ</a></li>
         </ul>
-    </section>
-    <nav class="main">
+    </nav>
+    <nav class="main-navigation">
         <h1>Интернет-магазин<br>
             строительных материалов<br>
             и инструментов для ремонта
         </h1>
-        <p class="header-contacts">
-            <span class="telephone">+7(812)555-05-55</span><br>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
+        <div class="header-contacts">
+            <p class="telephone">+7(812)555-05-55</p>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
         <span class="person">Равшан Джамшутович</span>
         <ul class="user-navigation">
             <li class="my-order-link">Мои заказы</li>
             <li class="person-cabinet-link">Личный кабинет</li>
         </ul>
-        <ul class="main-navigation">
+        <ul class="main-manu">
             <li><a href="index.html">Главная</a></li>
             <li><a href="company.html">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -43,28 +43,34 @@
     </nav>
 </header>
 <main class="container">
-    <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="tool.html">Инструмент</a></li>
-        <li class="breadcrumbs-current">Перфораторы</li>
-    </ul>
-    <h2>Перфораторы</h2>
-    <section class="filters">
-        <h3 class="visually-hidden">Фильтр товаров</h3>
+    <section class="catalog-title">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="tool.html">Инструмент</a></li>
+            <li class="breadcrumbs-current">Перфораторы</li>
+        </ul>
+        <h2>Перфораторы</h2>
+    </section>
+    <div class="filters">
+        <section class="product-filter">
+        <h3 class="visually-hidden">Фильтр</h3>
         <!-- Здесь будет форма -->
-    </section>
-    <section class="picking">
-        <h3>Производители:</h3>
-        <!--Сдесь будут формы-->
-    </section>
-    <section class="picking">
-        <h3>Питание:</h3>
-        <!--Сдесь будут формы-->
-    </section> 
-    <button class="button">to show</button>
+        </section>
+        <section class="picking">
+           <h3>Производители:</h3>
+            <!--Сдесь будут формы-->
+       </section>
+       <section class="picking">
+            <h3>Питание:</h3>
+            <!--Сдесь будут формы-->
+        </section> 
+        <button class="button">to show</button>
+    </div>
     <section class="catalog">
-        <div class="sorting">сортировка</div>
+        <div class="sorting">сортировка</div><!--Я считаю, что в этом месте, лучше всего поставить див,
+        т.к. этот блок не несёт в себе ни какой смысловой нагрузки, а лищь выполняет функцию инструмента.
+        Я не разметил его, потому что в задании он выделен красным.-->
         <h3>Список Перфораторов</h3>
         <ul class="catalog-list">
             <li class="item">
@@ -76,9 +82,9 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 3000</span>
                     </a>
-                    <span class="price">22500 Р.</span>
-                    <span class="price-discount">15500 Р.</span>
                 </h4>
+                <span class="price">22500 Р.</span>
+                <span class="price-discount">15500 Р.</span>    
             </li>
             <li class="item">
                 <a href="catalog-item.html">
@@ -89,9 +95,9 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 6000</span>
                     </a>
-                    <span class="price">30500 Р.</span>
-                    <span class="price-discount">25500 Р.</span>
                 </h4>
+                <span class="price">30500 Р.</span>
+                <span class="price-discount">25500 Р.</span>   
             </li>
             <li class="item">
                 <a href="catalog-item.html">
@@ -102,9 +108,9 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 2000</span>
                     </a>
-                    <span class="price">12500 Р.</span>
-                    <span class="price-discount">12500 Р.</span>
                 </h4>
+                <span class="price">12500 Р.</span>
+                <span class="price-discount">12500 Р.</span>    
             </li>
             <li class="item">
                 <a href="catalog-item.html">
@@ -115,9 +121,9 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 3000</span>
                     </a>
-                    <span class="price">22500 Р.</span>
-                    <span class="price-discount">15500 Р.</span>
                 </h4>
+                <span class="price">22500 Р.</span>
+                <span class="price-discount">15500 Р.</span>   
             </li>
             <li class="item">
                 <a href="catalog-item.html">
@@ -128,9 +134,9 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 6000</span>
                     </a>
-                    <span class="price">30500 Р.</span>
-                    <span class="price-discount">25500 Р.</span>
                 </h4>
+                <span class="price">30500 Р.</span>
+                <span class="price-discount">25500 Р.</span>    
             </li>
             <li class="item">
                 <a href="catalog-item.html">
@@ -141,9 +147,9 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 2000</span>
                     </a>
-                    <span class="price">12500 Р.</span>
-                    <span class="price-discount">12500 Р.</span>
                 </h4>
+                <span class="price">12500 Р.</span>
+                <span class="price-discount">12500 Р.</span> 
             </li>
             <li class="item">
                 <a href="catalog-item.html">
@@ -154,9 +160,9 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 3000</span>
                     </a>
-                    <span class="price">22500 Р.</span>
-                    <span class="price-discount">15500 Р.</span>
                 </h4>
+                <span class="price">22500 Р.</span>
+                <span class="price-discount">15500 Р.</span> 
             </li>
             <li class="item">
                 <a href="catalog-item.html">
@@ -167,9 +173,9 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 6000</span>
                     </a>
-                    <span class="price">30500 Р.</span>
-                    <span class="price-discount">25500 Р.</span>
                 </h4>
+                <span class="price">30500 Р.</span>
+                <span class="price-discount">25500 Р.</span>
             </li>
             <li class="item">
                 <a href="catalog-item.html">
@@ -180,15 +186,16 @@
                         <span class="producer">Перфоратор BOSCH</span>
                         <span class="catalog-item-title">BFG 2000</span>
                     </a>
-                    <span class="price">12500 Р.</span>
-                    <span class="price-discount">12500 Р.</span>
                 </h4>
+                <span class="price">12500 Р.</span>
+                <span class="price-discount">12500 Р.</span>
             </li>
         </ul>
         <ul class="pagination-list">
             <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
             <li class="pagination-item"><a>2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>      
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="next-pagination-item"><a href="#">следующая</a></li>      
         </ul>
     </section>
 </main>
@@ -197,10 +204,10 @@
         <a href="index.html">
             <img src="img/logoTechnomart.png" alt="Логотип техномарта">
         </a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>+7 (812) 555-05-55</p>
         </p>
-        <ul>
+        <ul class="footer-navigation">
             <li><a href="company.html">Компания</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -215,17 +222,17 @@
         </ul>
     </nav>
     <section class="finale">
-        <p>© 2010–2019 Компания «Техномарт»<br>
-           Все права защищены</p>
+        <p>© 2010–2019 Компания «Техномарт»</p>
+        <p>Все права защищены</p>
         <ul class="social">
             <li><a href="https://vk.com">В Контакте</a></li>
             <li><a href="https://facebook.com">facebook</a></li>
             <li><a href="https://instagram.com">instagram</a></li>
         </ul>
-        <p>братная связь:<br>
-           <span class="gold">mail@htmlacademy.ru</span></p>
-        <p>Разработано—<br>
-          <span class="gold">htmlacademy.ru</span></p>
+        <p>братная связь:</p>
+           <span class="gold">mail@htmlacademy.ru</span>
+        <p>Разработано—</p>
+          <span class="gold">htmlacademy.ru</span>
     </section>
 </footer>
   </body>
