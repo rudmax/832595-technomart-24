@@ -16,8 +16,8 @@
               </label> 
           </form>
           <ul class="order-manu">
-              <li class="bookmarks">Закладки:0</li>
-              <li class="basket">Корзина:0</li>
+              <li class="bookmarks"><a href="bookmarks.html">Закладки:0</a></li>
+              <li class="basket"><a href="basket.html">Корзина:0</a></li>
               <li class="order"><a href="order.html">Оформить заказ</a></li>
           </ul>
       </nav>
@@ -66,31 +66,32 @@
               <p>Вы можете забрать товар сами,<br>
                  заехав в наш офис:</p>
               <p><a href="map.html"><img src="img/map.png" alt="Карта" width="300px" height="158px"></a></p>
-              <section class="map pop-up">
-                  <h3 class="visually-hidden">Адрес</h3>
-                  <img src="" width="" height="" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-                  <button type="botton" class="close">Закрыть</button>
-              </section>
-              <p><a href="feedback.html">заблудились? Напишите нам!</a></p>
-              <section class="feedback pop-up">
-                  <h3 class="visually-hidden">Обратная связь</h3> 
-                  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p>
-                        <label for="your-name" class="feedback-form-name">Ваше имя:</labe>
-                        <input type="text" id="your-name" name="name">
-                        <label for="your-email" class="feedback-form-email">Ваш е-mail:</label>
-                        <input type="email" id="your-email" name="email">
-                    </p>
-                    
-                    <p><label for="mail" class="feedback-form-mail">Текст письма:</label>
-                       <textarea id="mail" name="text-mail"></textarea>
-                    </p> 
-                  </form>
-                  <button type="botton" class="close">Закрыть</button>
-                  <div class="gray"><button type="submit">отправить</button></div>
-              </section>
           </section>
       </section>
+      <section class="map pop-up">
+        <h3 class="visually-hidden">Адрес</h3>
+        <button type="button" class="close">Закрыть</button>
+        <img src="img/rectangle.png" width="970px" height="476px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        
+    </section>
+    <p><a href="feedback.html">заблудились? Напишите нам!</a></p>
+    <section class="feedback pop-up">
+        <h3 class="visually-hidden">Обратная связь</h3>
+        <button type="botton" class="close">Закрыть</button> 
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+              <label for="your-name" class="feedback-form-name">Ваше имя:</labe>
+              <input type="text" id="your-name" name="name">
+              <label for="your-email" class="feedback-form-email">Ваш е-mail:</label>
+              <input type="email" id="your-email" name="email">
+          </fieldset>
+          <fieldset>
+              <label for="mail" class="feedback-form-mail">Текст письма:</label>
+              <textarea id="mail" name="text-mail"></textarea>
+          </fieldset>
+          <div class="gray"><button type="submit">отправить</button></div> 
+        </form>  
+    </section>
   </main>
   <footer>
       <nav class="minor">

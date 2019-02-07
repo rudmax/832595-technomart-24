@@ -16,8 +16,8 @@
             </label> 
         </form>
         <ul class="order-manu">
-            <li class="bookmarks">Закладки:0</li>
-            <li class="basket"><a href="basket.html">Корзина:</a>0</li>
+            <li class="bookmarks"><a href="bookmarks.html">Закладки:0</a></li>
+            <li class="basket"><a href="basket.html">Корзина:0</a></li>
             <li class="order"><a href="order.html">Оформить заказ</a></li>
         </ul>
     </nav>
@@ -30,7 +30,7 @@
             <p class="telephone">+7(812)555-05-55</p>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <span class="person">Равшан Джамшутович</span>
+        <div class="person"><p>Равшан Джамшутович</p></div>
         <ul class="user-navigation">
             <li class="my-order-link"><a href="my-order.html">Мои заказы</a></li>
             <li class="person-cabinet-link"><a href="person-cabinet.html">Личный кабинет</a></li>
@@ -48,46 +48,60 @@
 </header>
 <main class="container">
     <section class="catalog-title">
+            <h2>Перфораторы</h2>
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="tool.html">Инструмент</a></li>
             <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
-        <h2>Перфораторы</h2>
     </section>
-    <div class="filters">
-        <section class="product-filter">
-        <h3 class="visually-hidden">Фильтр</h3>
-        </section>
-        <section class="picking">
+    <section class="filters">
+        <h2 class="visually-hidden>Фильтры</h2>
+        <form class="catalog-form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="filtr"><p>Фильтр:</p></div>
+           <h3>Цена:</h3>
+                <!--Форма-->
            <h3>Производители:</h3>
-            <form class="catalog-form" action="https://echo.htmlacademy.ru" method="POST">
-                <input type="checkbox" name="bosch" id="bosch" checked>
-                <label for="bosch" class="fabricator">bosch</label>
-                <input type="checkbox" name="interskol" id="interskol">
-                <label for="interskol" class="fabricator">интерскол</label>
-                <input type="checkbox" name="makita" id="makita" checked>
-                <label for="makita" class="fabricator">makita</label>
-                <input type="checkbox" name="dewalt" id="dewalt">
-                <label for="dewalt" class="fabricator">dewalt</label>
-                <input type="checkbox" name="hitachi" id="hitachi">
-                <label for="hitachi" class="fabricator">hitachi</label>
-            </form>
-       </section>
-       <section class="picking">
+            <ul class="producer">
+                <li>
+                    <input type="checkbox" name="bosch" id="bosch" checked>
+                    <label for="bosch" class="fabricator">bosch</label>
+                </li>  
+                <li>
+                    <input type="checkbox" name="interskol" id="interskol">
+                    <label for="interskol" class="fabricator">интерскол</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="makita" id="makita" checked>
+                    <label for="makita" class="fabricator">makita</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="dewalt" id="dewalt">
+                    <label for="dewalt" class="fabricator">dewalt</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hitachi" id="hitachi">
+                    <label for="hitachi" class="fabricator">hitachi</label>
+                </li>  
+            </ul>   
             <h3>Питание:</h3>
-            <form class="catalog-form" action="https://echo.htmlacademy.ru" method="POST">
-                <input type="radio" name="akum" id="akum" checked>
-                <label for="akum" class="power">аккумуляторные</label>
-                <input type="radio" name="net" id="net">
-                <label for="net" class="power">сетевые</label>
-            </form>
-        </section> 
-        <button class="button">to show</button>
-    </div>
+            <ul class="power">
+                <li>
+                    <input type="radio" name="power-type" id="akum" checked>
+                    <label for="akum" class="power">аккумуляторные</label>
+                </li>
+                <li>
+                    <input type="radio" name="power-type" id="net">
+                    <label for="net" class="power">сетевые</label>
+                </li>
+            </ul>
+            <button type="button" class="button">показать</button>
+        </form>
+    </section>
     <section class="catalog">
-        <div class="sorting">сортировка</div>
+        <h2 class="visually-hidden">Каталог</h2>
+        <section class="sorting"><h3>сортировка:</h3></section>
         <h3 class="visually-hidden">Список Перфораторов</h3>
         <ul class="catalog-list">
             <li class="item">
