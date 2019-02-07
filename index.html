@@ -10,7 +10,11 @@
           <a href="index.html">
               <img src="img/logo.png" alt="Логотип техномарта">
           </a>
-          <form>search</form>
+          <form class="search" action="https://echo.htmlacademy.ru" method="post">
+              <label>Поиск:
+                   <input type="search" name="search">
+              </label> 
+          </form>
           <ul class="order-manu">
               <li class="bookmarks">Закладки:0</li>
               <li class="basket">Корзина:0</li>
@@ -27,8 +31,8 @@
               <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <ul class="user-navigation">
-              <li class="login-link">Войти</li>
-              <li class="registration-link">Регистрация</li>
+              <li class="login-link"><a class="login-link" href="login.html">Войти</a></li>
+              <li class="registration-link"><a class="registration-link" href="registration.html">Регистрация</a></li>
           </ul>
           <ul class="main-menu">
               <li><a href="index.html">Главная</a></li>
@@ -55,14 +59,36 @@
                   <li>Автотрейдинг</li>
                   <li>ЖелДорЭкспедиция</li>
               </ul>
-              <a href="detailed.html">подробнее о компании</a>
+              <p><a href="detailed.html">подробнее о компании</a></p>
           </section>
           <section class="company-contacts">
               <h2>КОНТАКТЫ</h2>
               <p>Вы можете забрать товар сами,<br>
                  заехав в наш офис:</p>
-              <div class="map">карта</div>
-              <a href="feedback.html">заблудились? Напишите нам!</a>
+              <p><a href="map.html"><img src="img/map.png" alt="Карта" width="300px" height="158px"></a></p>
+              <section class="map pop-up">
+                  <h3 class="visually-hidden">Адрес</h3>
+                  <img src="" width="" height="" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                  <button type="botton" class="close">Закрыть</button>
+              </section>
+              <p><a href="feedback.html">заблудились? Напишите нам!</a></p>
+              <section class="feedback pop-up">
+                  <h3 class="visually-hidden">Обратная связь</h3> 
+                  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                        <label for="your-name" class="feedback-form-name">Ваше имя:</labe>
+                        <input type="text" id="your-name" name="name">
+                        <label for="your-email" class="feedback-form-email">Ваш е-mail:</label>
+                        <input type="email" id="your-email" name="email">
+                    </p>
+                    
+                    <p><label for="mail" class="feedback-form-mail">Текст письма:</label>
+                       <textarea id="mail" name="text-mail"></textarea>
+                    </p> 
+                  </form>
+                  <button type="botton" class="close">Закрыть</button>
+                  <div class="gray"><button type="submit">отправить</button></div>
+              </section>
           </section>
       </section>
   </main>
@@ -100,6 +126,6 @@
           <p>Разработано—</p>
           <span class="gold">htmlacademy.ru</span>
       </section>
-  </footer> 
-  </body>
+   </footer>
+ </body>
 </html>
