@@ -19,18 +19,9 @@ body {
     display: none;
 }
 
-.order-manu,
-.main-menu,
-.user-navigation,
-.footer-navigation,
-.pick-out,
-.social,
-.capability,
-.breadcrumbs,
-.producer,
-.power,
-.catalog-list,
-.pagination-list {
+.unstyled-list,
+.basket,
+.order {
     list-style: none;
 }
 
@@ -42,21 +33,16 @@ a {
     text-decoration: none;
 }
 
-.order-manu a,
-.main-menu a,
-.finale a ,
-.company-about a,
-.company-contacts a,
-.footer-navigation a{ 
+.text-white a{ 
     color: #ffffff;
 }
 
 .head-navigation {
     font-size: 17px;
     line-height: 18px;
-    color: #ffffff;
     font-weight: normal;
     text-align: left;
+    color: #ffffff;
 
     background-color: #293449;
 }
@@ -66,12 +52,22 @@ a {
     background-color:#293449;
 }
 
-input[type="search"]::-webkit-input-placeholder {
-    color: #ffffff;
-} 
 input[type="search"]::-moz-placeholder {
-    color: #ffffff;
+    opacity: 1;
+    color: #ffffff; 
 }
+input[type="search"]::-webkit-input-placeholder {
+    color: #ffffff; 
+}
+input[type="search"]:-ms-input-placeholder {
+    color: #ffffff; 
+}
+input[type="search"]::-ms-input-placeholder {
+    color: #ffffff; 
+}
+input[type="search"]::placeholder { 
+    color: #ffffff; 
+} 
 
 .order {
     background-color: #63a63e;
@@ -93,15 +89,15 @@ input[type="search"]::-moz-placeholder {
   text-align: center;
 }
 
-.person a{
+.person {
     font-size: 21px;
     line-height: 21px;
 
     background-color: #ffffff;
 }
 
-.user-navigation .my-order-link a,
-.user-navigation .person-cabinet-link a{
+.my-order-link a,
+.person-cabinet-link a{
     font-size: 16px;
     text-decoration: underline;
     font-weight: normal;
@@ -114,12 +110,12 @@ input[type="search"]::-moz-placeholder {
   text-align: center;
 }
 
-.user-navigation a {
+.user-navigation {
     font-size: 21px;
-    font-style: normal;
     line-height: 21px;
+    font-style: normal;
+    font-weight: normal;
     text-align: left;
-    color: #000000;
 }
 
 .login-link,
@@ -127,10 +123,9 @@ input[type="search"]::-moz-placeholder {
     background-color: #ffffff;
 }
 
-.breadcrumbs a {
+.breadcrumbs {
     font-size: 13px;
     line-height: 18px;
-    color: #000000;
 }
 
 .catalog-title h2 {
@@ -160,27 +155,29 @@ input[type="search"]::-moz-placeholder {
 
 .producer label,
 .power label{
-    font-family: PTSans, sans-serif;
+    font-family: PTSans, Arial, sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: normal;
 }
 
+.item {
+    font-family: PTSans, Arial, sans-serif;
+}
+
 .button {
-    font-family: PTSans, sans-serif;
+    font-family: PTSans, Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
 }
 
 .item h4 {
-    font-family: PTSans, sans-serif;
     font-size: 18px;
     line-height: 20px;
 }
 
 .price,
 .price-discount {
-    font-family: PTSans, sans-serif;
     font-size: 17px;
     line-height: 18px;
 }
@@ -194,11 +191,11 @@ input[type="search"]::-moz-placeholder {
 .price-discount {
     color: #ffffff;
     background-color: #ee3643;
-    
 }
 
-.item a,
-.pagination-list a {
+.pagination-list a,
+.user-navigation a,
+.breadcrumbs a {
     color: #000000;
 }
 
@@ -211,34 +208,34 @@ input[type="search"]::-moz-placeholder {
     font-size: 17px;
     font-weight: normal;
     line-height: 17px;
-    color:#ffffff;
 
     background-color: #32425c;
 }
 
 .main-header {
-    background: url(../img/manubg.jpg);
+    background-color: #f3f7f8;
 }
 
 .company {
+    font-family: Cuprum, Arial, sans-serif; 
+    font-weight: normal;
     background-color: #ffffff;
 }
 
 .company h2 {
     font-size: 30px;
+    font-weight: normal;
     line-height: 30px;
     text-transform: uppercase;
 }
 
 .company-about p {
-    font-family: PTSans, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
 
 .company-about .pop-up-link,
-.company-contacts .pop-up-link{
-    font-family: Cuprum;
+.company-contacts .pop-up-link {
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -250,8 +247,8 @@ input[type="search"]::-moz-placeholder {
 }
 
 footer {
-    background-color: #32425c;
     color: #ffffff;
+    background-color: #32425c;
 }
 
 .minor {
@@ -283,6 +280,25 @@ footer {
 
 .social li {
     background-color: #212a3a;
+}
+
+.buy {
+    background-color: #63a63e;
+    color: #ffffff;
+}
+
+.buy,
+.add-bookmarks {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.add-bookmarks {
+    font-family: PTSans, Arial, sans-serif;
+    border:2px solid #63a63e;
+    background-color: #ffffff;
 }
 
 .order:hover {
@@ -317,37 +333,12 @@ footer {
     color: #ee3643;
 }
 
-.user-navigation a:active {
-    color:#c7c7c7;
-}
-
-.person:active {
-    color: #c5c5c5;
-}
-
-.item .buy {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    font-weight: normal;
-    background-color: #63a63e;
-    color: #ffffff;
-}
-
-.item button {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    font-weight: normal;
-    border:2px solid #63a63e;
-    background-color: #ffffff;
-}
-
-.user-navigation .person a:hover {
+.person a:hover {
     color: #444444;
 }
 
-.user-navigation .person a:active {
+.user-navigation a:active,
+.person a:active {
     color:#c7c7c7;
 }
 
