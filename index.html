@@ -17,15 +17,15 @@
                 <input type="search" name="search" placeholder="Поиск:">
           </form>
           <ul class="order-manu text-white unstyled-list">
-                <li class="bookmarks"><a href="bookmarks.html">Закладки:0</a></li>
-                <li class="basket"><a href="basket.html">Корзина:0</a></li>
+                <li class="bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
+                <li class="basket"><a href="basket.html">Корзина: 0</a></li>
                 <li class="order"><a href="order.html">Оформить заказ</a></li>
           </ul>
       </nav>
       <nav class="main-navigation">
           <div class="main-navigation-align-other">
-                <h1>Интернет-магазин<br>
-                    строительных материалов<br>
+                <h1>Интернет-магазин
+                    строительных материалов
                     и инструментов для ремонта
                 </h1>
                 <div class="header-contacts">
@@ -57,7 +57,7 @@
               <h2>КОМПАНИЯ «Техномарт»</h2>
               <p>Настоящий мужской шоппинг начинается здесь!
                    Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-              <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+              <p>Мы можем доставить ваш товар в самые отдаленные точки России!
                    Техномарт работает со многими транспортными компаниями:</p>
               <ul class="capability unstyled-list">
                   <li>Деловые линии</li>
@@ -68,33 +68,38 @@
           </section>
           <section class="company-contacts text-white">
               <h2>КОНТАКТЫ</h2>
-              <p>Вы можете забрать товар сами,<br>
+              <p>Вы можете забрать товар сами,
                  заехав в наш офис:</p>
-              <p class="company-contacts-map"><a href="map.html"><img src="img/map.png" alt="Карта" width="300px" height="158px"></a></p>
+              <div class="company-contacts-map"><a href="map.html"><img src="img/map.png" alt="Карта" width="300px" height="158px"></a></div>
               <a href="feedback.html" class="pop-up-link feedback">заблудились? Напишите нам!</a>
           </section>
       </section>
       <section class="map-pop-up">
         <h3 class="visually-hidden">Адрес</h3>
-        <button type="button" class="close">Закрыть</button>
-        <img src="img/rectangle.png" width="970px" height="476px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        
+        <a href="index.html" class="close"></a>
+        <img src="img/rectangle.png" width="970px" height="446px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </section>
     
     <section class="feedback-pop-up">
         <h3 class="visually-hidden">Обратная связь</h3>
-        <button type="botton" class="close">Закрыть</button> 
+        <a href="index.html" class="close"></a>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-              <label for="your-name" class="feedback-form-name">Ваше имя:</labe>
-              <input type="text" id="your-name" name="name">
-              <label for="your-email" class="feedback-form-email">Ваш е-mail:</label>
-              <input type="email" id="your-email" name="email">
-          </fieldset>
-          <fieldset>
-              <label for="mail" class="feedback-form-mail">Текст письма:</label>
-              <textarea id="mail" name="text-mail"></textarea>
-          </fieldset>
+          <div class="feedback-form-align">
+                <fieldset>
+                    <label for="your-name" class="feedback-form-name">Ваше имя:</label>
+                    <input type="text" id="your-name" name="name" placeholder="Имя Фамилия">
+                </fieldset>
+                <fieldset>
+                    <label for="your-email" class="feedback-form-email">Ваш е-mail:</label>
+                    <input type="email" id="your-email" name="email" placeholder="email@exemple.com">
+                </fieldset>
+          </div>
+          <div class="feedback-form-text-area">
+              <div>
+                    <label for="mail" class="feedback-form-mail">Текст письма:</label>
+                    <textarea id="mail" name="text-mail" placeholder="В свободной форме"></textarea>
+              </div> 
+          </div>
           <div class="gray"><button type="submit">отправить</button></div> 
         </form>  
     </section>
@@ -125,17 +130,17 @@
           </div>
       </nav>
       <section class="finale text-white">
-          <p>© 2010–2019 Компания «Техномарт»<br>
+          <p class="copyright">© 2010–2019 Компания «Техномарт»
              Все права защищены</p>
           <ul class="social unstyled-list">
-              <li><a href="https://vk.com">В Контакте</a></li>
-              <li><a href="https://facebook.com">facebook</a></li>
-              <li><a href="https://instagram.com">instagram</a></li>
+              <li class="vk"><a href="https://vk.com"><span class="visually-hidden">В Контакте</span></a></li>
+              <li class="fcb"><a href="https://facebook.com"><span class="visually-hidden">facebook</span></a></li>
+              <li class="insta"><a href="https://instagram.com"><span class="visually-hidden">instagram</span></a></li>
           </ul>
-          <p class="htmlacademy">Обратная связь:<br>
+          <p class="htmlacademy">Обратная связь:
               <a href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p class="htmlacademy">Разработано—<br>
+          <p class="htmlacademy">Разработано —
               <a href="https://htmlacademy.ru">htmlacademy.ru</a>
           </p>
       </section>
