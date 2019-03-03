@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,7 +12,7 @@
     <header class="main-header">
       <nav class="head-navigation">
           <a class="logo-link" href="index.html">
-                <img src="img/logo.png" alt="Логотип техномарта">
+                <img src="img/technomart.png" alt="Логотип техномарта">
           </a>
           <form class="search" action="https://echo.htmlacademy.ru" method="GET">
                 <input type="search" name="search" placeholder="Поиск:">
@@ -51,7 +52,110 @@
       </nav>
   </header>
   <main>
-      <!--сложные блоки-->
+      <section class="index-items">
+          <h2 class="visually-hidden">Главные элементы</h2>
+          <div class="align-index-items">
+              <div class="index-items-cart index-items-materials new">
+                    <h3>Материалы</h3>
+                    <a href="#">на любой вкус</a>
+              </div>
+              <div class="index-items-cart index-items-tool">
+                    <h3>Инструмент</h3>
+                    <a href="#">на все случаи</a>
+              </div>
+              <div class="index-items-cart index-items-equipment">
+                    <h3>Техника</h3>
+                    <a href="#">для стройки</a>
+              </div>
+              <div class="index-items-slider">
+                    <button class="slider-button-left" type="button"></button>
+                    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+                    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+                    <div class="slider-controls">
+                       <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+                       <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+                    </div>
+                    <ul class="slider-list">
+                        <li class="slider-item">
+                            <h3>дрели</h3>
+                            <p>Соседям на радость!</p>
+                            <a href="catalog.html">открыть каталог</a> 
+                        </li>
+                        <li class="slider-item">
+                            <h3>Перфораторы</h3>
+                            <p>Настоящие мужские игрушки</p>
+                            <a href="catalog.html">открыть каталог</a> 
+                        </li>
+                    </ul>
+                    <button class="slider-button-right" type="button"></button>   
+              </div>
+              <div class="align-column-index-items">
+                    <div class="index-items-cart index-items-discounts">
+                        <h3>Скидки 50%</h3>
+                        <a href="#">на 350 товаров</a>
+                    </div>
+                    <div class="index-items-cart index-items-delivery">
+                        <h3>Доставка</h3>
+                        <a href="#">бесплатно</a>
+                    </div>
+              </div>
+          </div>
+      </section>
+      <section class="index-items-popular">
+            <div class="index-items-popular-product">
+                <h2>популярные товары:</h2>
+                <a href="#">все популярные товары</a>
+            </div>
+            <ul class="catalog-list unstyled-list">
+                <li class="item">
+                    <div class="actions">
+                        <a href="order.html" class="buy">купить</a>
+                        <a href="bookmark.html" class="add-bookmarks">в закладки</a>
+                    </div>
+                    <div class="image"><img src="img/bfg-9000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 9000"></div>                           
+                    <div class="catalog-item-title">Перфоратор BOSCH BFG 9000</div>
+                    <div class="align-price">
+                        <span class="price">32 500 Р.</span>
+                        <span class="price-discount">25 500 Р.</span> 
+                    </div>     
+                </li>
+                <li class="item">
+                    <div class="actions">
+                        <a href="order.html" class="buy">купить</a>
+                        <a href="bookmark.html" class="add-bookmarks">в закладки</a>
+                    </div>
+                    <div class="image"><img src="img/product-1.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 3000"></div>                           
+                    <div class="catalog-item-title">Перфоратор BOSCH BFG 3000</div>
+                    <div class="align-price">
+                        <span class="price">22 500 Р.</span>
+                        <span class="price-discount">15 500 Р.</span> 
+                    </div>     
+                </li>
+                <li class="item">                   
+                    <div class="actions">
+                        <a href="order.html" class="buy">купить</a>
+                        <a href="bookmark.html" class="add-bookmarks">в закладки</a>
+                    </div>
+                    <div class="image"><img src="img/product-2.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 6000"></div>                           
+                    <div class="catalog-item-title">Перфоратор BOSCH BFG 6000</div>
+                    <div class="align-price index-items-align-price">
+                        <span class="price">30 500 Р.</span>
+                        <span class="price-discount">25 500 Р.</span> 
+                    </div>     
+                </li>
+                <li class="item new">
+                    <div class="actions">
+                        <a href="order.html" class="buy">купить</a>
+                        <a href="bookmark.html" class="add-bookmarks">в закладки</a>
+                    </div>
+                    <div class="image"><img src="img/product-3.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 2000"></div>                           
+                    <div class="catalog-item-title">Перфоратор BOSCH BFG 2000</div>
+                    <div class="align-price index-items-margin-price">
+                        <span class="price-discount">12 500 Р.</span> 
+                    </div>     
+                </li>
+            </ul>
+        </section>
       <section class="company">
           <section class="company-about text-white">
               <h2>КОМПАНИЯ «Техномарт»</h2>
@@ -76,13 +180,12 @@
       </section>
       <section class="map-pop-up">
         <h3 class="visually-hidden">Адрес</h3>
-        <a href="index.html" class="close"></a>
+        <button class="close" type="button">Закрыть</button>
         <img src="img/rectangle.png" width="970px" height="446px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </section>
-    
     <section class="feedback-pop-up">
         <h3 class="visually-hidden">Обратная связь</h3>
-        <a href="index.html" class="close"></a>
+        <button class="close" type="button">Закрыть</button>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="feedback-form-align">
                 <fieldset>
@@ -108,7 +211,7 @@
       <nav class="minor">
           <div class="minor-align">
                 <a class="minor-align-link" href="index.html">
-                    <img src="img/logo.png" alt="Логотип техномарта">
+                    <img src="img/technomart.png" alt="Логотип техномарта">
                 </a>
                 <ul class="footer-navigation text-white unstyled-list">
                     <li><a href="company.html">Компания</a></li>
@@ -141,7 +244,7 @@
               <a href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="htmlacademy">Разработано —
-              <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
       </section>
    </footer>
