@@ -1774,3 +1774,7 @@ footer {
     background-repeat: no-repeat;
     background-position: 190px 30px;
 }
+
+.filtr-hidden {
+    visibility: hidden;
+}
