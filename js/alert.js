@@ -23,7 +23,6 @@ for (var i = 0; i <= modalLink.length; i++) {
     });
     
     window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === 27) {
         if (mapPopup.classList.contains("item-added-pop-up-show")) {
             mapPopup.classList.remove("item-added-pop-up-show");
