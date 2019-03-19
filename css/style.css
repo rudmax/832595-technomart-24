@@ -467,6 +467,7 @@ input[type="search"]::placeholder {
 }
 
 .pagination-item a {
+    color: #000000;
     padding: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -510,6 +511,10 @@ input[type="search"]::placeholder {
     padding-right: 30px;
     font-weight: normal;
     text-transform: uppercase;
+}
+
+.next-pagination-item a:active {
+    color: #000000;
 }
 
 .user-navigation a,
